@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixfold Wallet · Política de Privacidad / Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #F7F9FC;
+    --surface: #FFFFFF;
+    --ink: #1A2433;
+    --ink-muted: #5B6B82;
+    --ink-faint: #8C99AD;
+    --accent: #1565C0;
+    --accent-ink: #0B3D75;
+    --accent-soft: #E8F1FC;
+    --border: #DCE3EE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161D;
+      --surface: #1A212C;
+      --ink: #E7ECF3;
+      --ink-muted: #97A3B8;
+      --ink-faint: #6B7690;
+      --accent: #7FB0F0;
+      --accent-ink: #D9E8FA;
+      --accent-soft: #1F3350;
+      --border: #2A3444;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0 20px 96px;
+  }
+  .sheet { max-width: 700px; margin: 0 auto; }
+  header.masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 40px 0 28px; border-bottom: 1px solid var(--border); flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark { width: 36px; height: 36px; flex: none; border-radius: 9px; }
+  .brand-name {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-weight: 600; font-size: 15px; letter-spacing: 0.01em;
+  }
+  nav.lang { display: flex; gap: 6px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; }
+  nav.lang a {
+    color: var(--accent); text-decoration: none; padding: 4px 10px;
+    border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
+  }
+  nav.lang a:hover { border-color: var(--accent); }
+  article + article { margin-top: 72px; padding-top: 8px; border-top: 3px double var(--border); }
+  .doc-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-muted); margin: 32px 0 0;
+  }
+  .doc-label .date { color: var(--ink-faint); text-transform: none; letter-spacing: 0.02em; }
+  h1.title {
+    font-weight: 600; font-size: clamp(2rem, 5vw, 2.6rem); line-height: 1.15;
+    letter-spacing: -0.01em; text-wrap: balance; margin: 10px 0 10px;
+  }
+  p.dek { color: var(--ink-muted); font-size: 1.05rem; max-width: 54ch; margin: 0 0 36px; }
+  .glance {
+    background: var(--accent-soft); border: 1px solid var(--border);
+    border-radius: 10px; padding: 24px 26px; margin: 0 0 40px;
+  }
+  .glance-eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 14px;
+  }
+  .glance-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .glance-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.98rem; }
+  .glance-list svg { flex: none; width: 18px; height: 18px; margin-top: 3px; color: var(--accent); }
+  .glance-list strong, .clause-body strong { font-weight: 600; }
+  section.clause { padding: 30px 0; border-bottom: 1px solid var(--border); }
+  section.clause:last-of-type { border-bottom: none; }
+  .clause-head { display: flex; align-items: baseline; gap: 14px; margin: 0 0 12px; }
+  .clause-num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px;
+    color: var(--accent); font-weight: 600; flex: none;
+  }
+  h2.clause-title { font-weight: 600; font-size: 1.3rem; margin: 0; text-wrap: balance; }
+  .clause-body { padding-left: 34px; }
+  .clause-body p { margin: 0 0 14px; max-width: 62ch; }
+  .clause-body p:last-child { margin-bottom: 0; }
+  .clause-body ul { margin: 0 0 14px; padding-left: 20px; }
+  .clause-body li { margin-bottom: 6px; max-width: 60ch; }
+  code.inline {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.85em;
+    background: var(--accent-soft); color: var(--accent-ink); padding: 0.12em 0.4em; border-radius: 4px;
+  }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--ink-faint);
+  }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (max-width: 560px) {
+    .clause-body { padding-left: 0; }
+    .clause-head { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="masthead">
+    <div class="brand">
+      <img class="brand-mark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAvL0lEQVR42o19abBl11Xet/be5977xla3ui21NdkSMpKFLNmYBBMTRjtDVUhV7CQOBSQkISRVDrioEIoQEooKgXICIVCuUCRxVYAQCC7GcijjoWw82yiWrdGSNXRLPc9vuvees/da+bGntc99TtKlp/e6733nnrOHtb71rW+tTSfv+UlB+SMA1Z/LCxR/IgJEApgpfRkICyACkIHA5l+ASdcRE68jLBCjLh/fBhGJn5v/yQAMAUCg/GYRCMXPEQjIULoXUXeefovqteNfBCIMhoDSdWEAgoCF4/Uo3wHX5yRJz03pczldEyCEdM8CIgZIYCzBWoAofkoeM/3/+PCiRwDu/2fwiQBmgR+A4G38NTLpWtIMaPp0MBgEgQilS8cHIfU+EQGJQAigfMOM9GDIw1XWgIiATJmT9vFEXaM8K5fnofLv3Ny3IaRJiKObB5r01SlegdIACtn0AAwWGxcCB5AXWCdwVtJ76f86+EKSJ+DwwScTV8/QE/xgAZg0gJRWkwBE5TcMDCR/kOjhSe8RRllG4Dgp6RNFAJi8mwh5GlHntEyKqImU9B79gEQU70PSqiaqj0iA5BUvDCECwQAked+lSYiTwmoC695sBzVOooVA4BkIDBgT4JzAmNEuUIOfdsBXH/zgA/reAHAwRHk3qpWQJiNtUVFLtl4pbWUZ30j6btI0kEDKwAMgrtdJnyPpIhRnO2+jshDyPREkjjLJaHdLHUyKZk2afSZ1d5ZNLWW3Cen31oUhaRcDAhIGjEUQB+4HdB3DOoLI6uDHCTjM7BjG0AuG3oFg4rbPy4dkNJscV5QQiDivwWhns+0uu5HLdo7/JRusDIS2xXnlSjEndbVTtItl8KvJSpMhnJ6J0sqltBsAIlMGk4Tjim/sXd4J9d71gioLyeQVme4nf55wNIdEWA4GjgMmEwMWtIui+oB25Q9LxjA4kLGo7onSQqSyFdUyQV67VFZVdmQUV4gwyEjxBYJsPuKDxkGg9kHKqlNfefdJ+dDkNLmMIAunCRnbYCq2u1yrzH0evORLyKRrxF1WnHv2bxpNEBXzVcxkejYyBM8WWA7opqYYs3xPbmXwe4b3XRwsittPUFd92Y7avUm0g9DIhNBaPlI/m3whNYJ5wDXyorQ3ZGzn82SYtEOUuUpfkn0BKO2xuvskDaAQCtqSxrCoL8nPLQoFJf+hYRe1xgwwaV4jGBmCAXpGN7X1WgCcHnzvGcNAMEbKgGR00JoQqAen5PSq8xRwQnBpI5PGWnUlF3+SfERcSax2FIpDlGT+8n4p7pvUxGRzYCjtUVYISCrOLY4/LTKqKEqB1dGk1IVAWF07EUS095HXmQAwljAEgvEB1plixlyZPREMA4HKDVYnVB7QSPYidVCTnY+WgiHGxNfTAMgYomo4ZkycrLQr2phAf9dbPg5aRC56Z3AxV3HF02hX1D1WEFljRqQ+L7JJi7ELpBhgMLh12miAW4XXh+xYshZDYBjLxWy5jPOXS4aIS1uzCZeUSdC2Ja1GogJNAa5Q05RoqA4yaXghxalK2r7FQRVoKwDFh++9gDmjHAAU1I6TZgAnHUNgqg8ghT5I7ZRi49NfSrCnVw3XgSSCEVOMHBHVCQWBJD4Rmfi5rHe+8m2DF3QdZSdMYA4IITsftbU05BJRL1Q7m3dFsYDFpKhrSQtJpcxNhn1xB0meRIWJmIF5H3DnSYeJZTCn3zEWIkHBumgHvBi8dMViSh7WJjtdvC1FMNAYmWw+28COtJMG1d1Z4KY0AISa3UYqVkoLqiw+gWcDKwwyBEckGIZiwKqllriNJa/UYpdryJ+xr7LIMPVjAQUfSySpdhepiRUjCqGox2GP9/zYFv7GLY9juHwBbm0GY6KDpc7CWAey0ZzBdqAO+K2PT/Cu992qdlV8Pkk3nf0KihOuMQaoHXzSiK6AngqWs2mSsgNr/KF9H6ldLSwIQdBZghNhhCDFGZZ5IykrrPwqVZhYB6riZiR+hYCIect4m2aiok2nut5EI494HWMEe3PCWx5a4J+86Sz8pQDZOAayaYuLgMgC1kbrEWcFYI9//B1X8Tuf6fCRF2/GxizuIik8j6IctKtVgWIJNDMIYY6myeTfRwMUtOnU8RJBQ/Ia4ZEhhCBwzHDMkagyOVot0V6+SArdRSp0TLaUpEagnOw8ZddPjBLBkRTqQhQkFSTnrYM7yvY57qebJ/vgc2fglx2cjUhEErxEDuKI0gMSPBNm68AtWz0ohPTMphBwhaQTU623SPOsFd2Q8lFSd2wKvCib1CbMzX4x0yImQdYMDvLEGDAznA9cMStpwkuarZW3o2gOh5pQpwYtBu3ASrX5dd0ryFqdBaBwDMAIfoBhj9Bz3EgUw/ocn5A2ISAEWBgecLA3gzCrHVvjj2KaSnwhhbkgUQMuKho2VBAYRs59tJGwwv7QmD9KdkAAxxliETeIuaCWZD7yB1NzlWLVUF+tSKeBY0QpHJISsBGR4ng4wbk8GVyoMQwDwuAAGweQhcAcQSERRX/VdTDGgINgQQ7v/E6PT55f4IafwdmK7yuBVwFAQXKQCD+ldco6nqES/MmhKJE0KdiMkI534jWZcyBWyHtWvEYNhAr3Tty8VoK1vPVKhKmo5/zhQgXeSmFRuSIqqiiKNJoKfZoAQLyUCYhjlLe5BbHAnbwPtH8dfnEeDx/ZwRF7BJf7NTibdrloXF7RJ1JQVswTSRvtU2VmoQPLHKkXs9JaAs2zYYyS0t8dS6RMG7xcyCkqXA4VByOjS0qx/Xr7ool+ldGhyv4Ue9rY8sxAVsTAy4ChN7BUA5/4crwv7wMgHtOv/xqYweDgk7+OvQMDFgEkRN4oUevV41Khpsc5A+2PRPLCJJXkQSX7MtcFNUbKjWaAIU1olWIIAVwhx6hNmEgJtjJu4QRUczQ4MmkEBc3qh8so6KEx61jY0SY7kLB+XHfD0sP3lKJSKTkBYcASYRgYl68vceX974P3gps3BLv7PXrvEw6gmnyRmhMgZTolT0YZQIUGVXAUF6fyA6KD04q0RGo8AIX/pICdeD0X74qb1UoKY4ni2jOdSoWjMU1GqtpWU3YUpai4JECKQyS0sV7dDSw1soUI/MDwQ6iJmxToMQMBAmMtEASnnj2PgYHLU8IvP34Xzs43MV1jCJnqwxpSkGq6M/smqjRGWSQjlAPREfUoPyAV8em0abEYkq0cJypCqNi4EsxTXWnUxrlpO5lir/WFtWHKfiEjl/ghphBkhcfXFrTYYWksKgdGGBhBmaZCqIJAfsDNNzkc2T6KIQA3rTHMi8cgbGEMJUqASl5YRjy6FK4p5ge0fc8+QHL0m1GU1PuvtkvqmBTzg1G8U18S4cgFAYqWzTav4f+TzVZUbP0AarYuteR1ypZRmzDXO0xa+KkBKojgQ5yApQeIueHTM8oiImBgMAGBTDSSQwCsa6lk0f5JGkwP7dO0ryMo9KcyX/k1QymOQFqYikMdsbQlzUOFfo1sKJWR1zSrjgOkEG6FE5FRFNg45cwTqUFVNHBN32Q6WUfD8cZZAOcCPn92E89eJNyxtQtPEckIRcLD2hRMcbxWSNd8+myHP7t4E2xXMwUNXUnqO+UoXaEchfOLPS9mUSrdQKsp1kxxFx+SnosKg0x10oXhdEKj9dMa06oVaqA4ItTcq+bDFWGHTLIpMqoQXArsVfgaERiD0FnC2YMt/K0/uB9/+faXYRAQBOicBYeAaztzdA7Y2tooWashAH/88m04s1zHbJaXDilfmVlbdZ8lZ612HxhWBZyVWlB5bhUDBFHIDQAJNZYJpuZUSFTQuv3qHxEdxTXJBkMVLqYVzRzAywCyFDVBCidJzg3kFJ0F7MQpwiunM2VEpmjYym2inBdY9AtI7wHxMUATAizwY+98G06dvYTf+u8fBGYuDaoFph2mkwlgp8WpCmkbnU2j1IRKhpxZIsOMYeBI8mGU3Bf9PQ6z66iYljbAHO2kbCGEsw8g5XAV508jVpMEYQiYrTkcu/8EBr2Cit4pIhhKk7e8scSNMzsp3KPCuMZ7YhXitykgUolwMQ6zyQQ0tQA7WAMczHu8/oG78HM/8l14+itn8b8++AiWfglrCEIGDAuYibK1ad2nuKFJa5CJ4qpsKiVqoOAsvuWuIzgivsDfGJeESPyZOD5GgKte8InzB7D5tZSjJmlDMChiLk+2y7oZynlMkuKUJNs9IxBmmHWDb/vXb8Hp4RIu39hF5zqwxA81nUM3mcYBNQbWEigI+v/xJPYevQSz5kpckTVdJNmZ0SifqplJA7HTBAICGIxufYYvPnsRP/XL78fjz57D7gKYrm8jaBSi7LhopUPiqgq8znGIUMmH0HLAe9/2WnzP2g76U6fhZtNoOmxEVbAmfhEBxgIzh5/9wgI/8bSHs4l611lDlTQqIZAhCCxc5el1bNEmH2AIYe5x9A2vwIs3BdClKW65eQ3sQ+WBDCUVRTJ5TLBTwuwNJ7D7pYvF4eZkeQagmYvSksImsa/yxQQLEQNjgCEwfu8jX8SFy3ugrotOnhSolSiXMYZacVcBBS3vxQna9oHx0PEJvtdcwLx38CdPYrAmkYwmxhyUdlOSW0454AdevY7/8PwSl5jQQcAVUhbZjEa/ef5dCbNBrRIg4+NsFiSglx6XL1xFOPBF/pEDLJO3lUSzaSDo1qeYrE9Axtd0pxJbyQj9ZLOXWdZKM3MK4lQWjQRbmzPsHfS4eG0PYqjNKZsVCVUDAKq0RmpGMr1lUzz83gEQAjoVPVOJcgGTWFwRgDsLSwbr3AM8ibsjW4888tzmwyWxsS6v/OwwJG9F9cb4IAHMHiIC7vtEB+TENTVZMR8ElgVePPy1HcAPgJvE6VQBDmVaQeHlmsUihVLQhvRUYSwnIk+U1kfGqVNqAyEkIVmVGrYReQgeCB4hcMwpUOZMak4gR7kCAnlCWPSY+5ACz9H9a2p+dO+GGlkHqkxDk1b5ppkxDD0GPyCEAWHw8INP3+PfwxBgiDAYAnnG0du2sf2GWxGWfUI1CS1xZZREB0gkKgnCBaMLSdSqFukHwxhtPkV9qdWquKXCIYnKTedJGkkcebEEL3uEfgAvB4TlAE7P6YcBvh+iAoQEyyCYTTr82L3rkWIQzRjWvFRetJISNADBicL6jaDDmMJKZr4+MKeBHqITYSm0cOHyCdjeXsebb78Nnzh9BtfJY3eDQRJXhzAV4WtDameT1JgjxkqaQySRgZywN5RIuA20Kt1NJeKuWF+r2EbiWQFCP8AH0fRiXb1pUYsTdPc9AHn5DOzVi/hGOYBhBxYbiY/i66pqcMy9OhFWVPNIjrKiG2XI4CGDB2eamqVgaEPA/sEc9x/bxg9/48N44fwlnLp4FV1gDEko0uT+taREuyEtmmp47bhyjKlaU+GhBE4FPAipdGM7KQTNdKIV9+adxB79kuHFFNKskpRRbrj0HoaBY69/IwaxoBeew14vAGz0ncaM4mppWNH4M8MpeVrlvwuSkIYeFhGEYUDwvma1MkMqABuDbv8ATz7+Zbz97Dlc2l9g7cRN2NnZRYeAwXu4hNXJyEgUJTBkQNZUBRpRpQqECwVBBnCWIDLAOAvXEayVqJCpNjUJxqpvYlF1BTqgSu8YQgACsGQBM2PofbLRlcUUEKwzWC4HXL+2g3M//wuQ5RK3bc+wv1gCmETklfWkSvGdhQ160l3OdVY1QJtMKLCRAOEA7nvwMIwga95iDLO5gfm5C3j25QuYHdlA/9SLeNX1Dfzab/9zfOyzX8FPvPv3sHZ0oyawk9kzxuBg/wDoh5wFbQRRGMvdFz125x7XbuzCX70BP500kpZmkCGAtXCb6zDOQjg0gh5jLfq9fbz7h96GBx64D+/5N/8RB3svQ1wHn31GmVyDYWBMnUEYGBcunYPrHM5duY4f391G6Ay67N6NGRk3wlgq6BrsLUreneiDRkksEqsPFP7XymJK+NrecgKbt5yAtYCXKY4Hh4fvvwNbGxv4o489gc899gIEwNqsQ+DotA52FnjTG78Gb33zgzh602aiOaRNYUrKFQDwPuC2W45id+8AOwcLmCRP4cArqcF+8Hji2ZfwRx9/FIv5HJPZBMwBxhoEFvi9A9xz9yvx17/167F57CiOb00xLAOILAJzATXMSZEHwRAIx9fXcHRtis4ZHHiPnT3FIBTpulGFI6hi/OSkHRFajQ40fFOZIAIkxBBdWCVWRJQzowonRSATwnRtikeefBFvfse7cWMuuPuV23j7Wx7A5584hxdeuohubQIZlviln/oe/MA7vgPLQdA5Cy3EG+ehCTHA8iHAGpPMUXxWQ1gR0OY/n/3Sc/j+f/FLeOrUeUw31rDcP8DGxgzf8i0PwQrwth//z1gww774EtbvddjpI/lXISw1i0GEizLclrysadUSaixJSzSzBdy694dEF8tlqlWU3FogkODBdg/m22+BPbYB7j3A1YQUubZybsEA/GfnYU9HpYK1BiEEvPKWbfyF19+NxeDxoY9+ET/8A38VP/uj340nnzuPl87vYHtzlh4wRfvGJMhJxVcaIlhrqjqcCCYLxwjl5zxZxhBecfMRvPDSOXzr9/8krlzbxcMPvBoP3Xs7Hn3mZXzx6VPF1HXG499tX8Y7bhIsJJVlcYbOyVclFMggbHTAf70i+ImdLdjZeoSnGOXQk4AYBS1GP0Ob9/6QQGX2G0mdUncJAsJiF2IPQCe6ZEdHkWZeFcaAyIDnDLPnYKZbMLaDUByI5TDADx6vf+0d+LpXH8Mv/Kt/iI31NSyWA55+8SJ8qAysoegf8m6IDq4OqjEUByQNeJ4o01RJCgbPYGbcefIEfuV/vh8f/dQjcLM1fPR/P4P5fIHJ2rRqN/slTL+Hb7I72IIvNRClXix9PoPgCLghBp/EFqSbgVxXFYSkkkFoQQclJsE1sipqE+pogJOBna5BvEDOLAEJTWRX8zNJd2kAaxwwWYtC2hTCB2Z0zmI27fCFzz2Nu+/8Zhw/to0r1w8wnTg8/LW3gVkqfatWePZT0mSYVOFeg1hqho+IMF8OOH3uGk6fu4rv+HMP41ff90GcOn0RZn2KbjYBcxUFG+sgk3X86WCA4GsGMG+3XBqV5ZDWwnYdYF3SwFKjCdX5j/J/4URFlGqSWiPYVqqgVoLQBDSxoMlahIWprKhNu6XMTC6ZQbaL1KQeRRhmanCkmBvB4AOWLNHxkYGIRIo5zXNggTEUKQJt6BMaM4bgPcdMmdRJNIYwnTjc9oojeO6lK9hf9Lh+Yx9mNoEhKoNfaBJjQDTBxBDAQeWqVc1w/jdjAGPA6RnpkIrIcT1Blt1DAKdrQsgkfmdUdqNFtkIGAldKb4qfEFZVMqTwOFduf6Spi7J436wYQwSyFlqHl2/cmjQp1rSBa8L7IoBzSjCQoi3hmEOYTjpYY+CHgM31CW7M57C2SzuqlR8QGbCbQtJqJ6NMioqPSvKJWp6qsf8JqKxI2LM8HRgljzOy0UkrhXBqgKSLuXXYrRVltaChOHpSBIli7yuwGpED0tLUutxA9EMm4kUURaHrXnwI8Mw4WAzYWyx0zFbva5Q2zTu5qujSTimKjqyW0GUI1AiZSdGpORNXgIOOGjO0zCyflp9n+SCNk9ukIjwa1wlL9f4q0JOiNa2jyQnj58ErgvX0M7OM3pN+5lQ5o95XJTK1oC3+O2EYPIwhvPE1d0D6XplXU+rQ0LQuqHqlOslUSDWMik0Io7rDYsYDhEMjx4QIjCh5nqgLNZJrtHBKJCj6V1oquRS11iR8MXNUWciVaktBogpUMl8NOqtNGt+bJyFPXpokZrAIAutJA3yqgThYDHjp4i5+9af/GX7qne+A392DNaSyVbX+QQ5R/2X/Bc3eUiLCcv5C5BDxLumtXHgtB5VIp6aQQKptbArapFAFoss4iwGikSpCmnYEOt8LVRKV8xcshxSOKyZU6xYy7Svj94ugcyb6g7QOJs7AWoMTRzewud7hyPYa7r7jzoafr0hKIaxxKoukasRJiXp1ETYdUl2pYLHWjzpRimcugdioZlb1aWgdO7fVH9oQZrXdKA0no+YeeeWzdm5y2N5DNZHaT4ioypf4Z33WwRDgmZPKJb5n6D3uufM4vGdcunqAl85fA2yGhPl+uDCetWkHqZJXqX6BuU2lNXSzqLqFLOVhtCE+t60KSLHjEF6hjikpAag1ryUfkFvJlC0KlXakmvdtUUf8KBapCjNdbdJ0RomcOnPlofK1srxqOrFgFiyGEFOmTd0cYR48FssBnhmdQYpnqp9rHTOalV4XOq/QDVXXBCVNQe0UQ2gqcPK0uhWskLe5odW0nlYWUxQfwVCsJSttZFhJPmrOtaV+KxYuPBILuMBJJW9sJoFBGszlmWJGSLaXg8HAHsyMqWXMZg47+wNArpCFRAQOjN77pipTV6zWlWpqW51CyysVgyj2gKXkokUt6iJnJEIL49IEEJprjfiLuuI1/pPUxEOytH2soiNaLdgpHUy4wd2xBi5+LwMitYZXlIdh4ZIY10CBEFlPaw0YwPJgF5N1i+AnQFig91NMp9OyawYf4ueZcXsUrZPKpoc1M1i3rcb8ojNxOhds0stBtTaocNpBtVrJZkavWtJCWKLGo4tqK9NY66ZQgWBUnx3RwQpyxUv8MiIjubuunq/eI5sgEWnilEXv0TkL6xyuXd/Fwc4S21tbuHRtF0dufiW6LpoSHxghxBQrVjpaNUOYUEFWTozTnupG9SLM6cHsW8woFk7AJmbEGo1jlXaIlmdDtQgrhcusWy+kwZC2pQ2t1shQg1a4iGtZqg6fNTYtCcdcgZOGiNt+PS5Vyly+tofbbz2G6fo2vvLcszByBVs3ncCJySTuEGPgA6MffJEQYmUH06h8dpSZpkM6sGgRcImbaDUNqquPQEk0qEsycyqNVeBFkigIVgMjiidC62Dbbhuqlqwm+YufURA1xwGy0gqNatwgramMTIEgQDCdOJw+exWTzuHY0S08+ODrsFwOOLK5lrgiC0MEZw22Nzexe3BQq1pytCt6GqTkQsbQrCnb0jkDIgVo2loLjX6ymXZQfXYKOqHs8LQVj7Y36itTnx/JfSCk4Y9WagdEtWEaNdUTFXyJytmOcwuk/MJhVARzQOccbr5pA8+8eAFbG1Nsb8xgrcHe/gGIKGa/AqMfAj7w8U/hvb/3fphJF3cXSZvEydWT2ZSQtA5Rl1yNcb6MasKImv51GQ4RBI4UwC86Gg0H8wRpso2qhydtLQxG2Lx2xWoS8GqXCFGKYAXGtI2gCv0MXd+bmmKoJkqigrHN9RnuPHkMl6/v4eylG2VRCQuMMThz8Rp29ud4z2/8JhaB4DZvgmiimNDUfekCa93tqvQx0smXcU5dd03TNRhSfbmrgZxKqmhMPC6wpKjmqmU6eeelmrGkrCMAnBs+UVuBI1SvvRx8oQyIx9GvFLpbB14FNGfeSKMhImxtzrC5PoVP1ASRQT94rM8m4ERxT9a2sFj0kd4WzerW3WlSkw1TGjC1inDKK860wVyDqkbaJ6iKI4DiDhBdcqObTTRlpQQyBt57eD+0VSaHVIFnrnziXNP6EQRYMpj3HrDAyWObGELkRXi1qLXtY9UMdi2qEFVRUqh1InRWINak8bTonMGkc9jcWMNfetPr8f5PPYqD+RLd+lrR4GU7LsIYFsvWwQqP8uYoigszmSrhVcsMNGW7oukXzvkAVZysAhHNuxgS9L3H1uYM9956F7yPdpFFcehGGhby2nwfL1+9BJecX6z5YiznS7zmnpO45+Td6BcLLJZDdapStZQ5+NJoT9MQ2g+Iisxk1OMtF+AFZjhrAWPw4oUr+GtvfhjPX9rD5594FjRx6JyN9zgMsJZw3/1fCzJdW092iLJ6Pt/HC6dfjDVpDc6XYg00+UiH9YyjlSBENWQhwAePm49s4me+73tx/aUDHCwGWBMbTiB1K3HWgozAOQtrLJZDj1//3AfxxMXTwJwB9tg4soFve9N92Fyb4cOfeQJu8gLe9Q/+DpwzWA4Rx3NSE2vup3TnlUqatfFCC1t1PTIBiD0xBGQsLl+9is9/6Wk8fvoo3vL19+Nvfvs34MOPPImrV64BzsJYg3/6g+/E7Xc/jJcvL+BsRIDGEKyJYgCX6gOIYjfVP/jD38TnP/3HcGsbpcuMLtEi0otfVNdEXT0INHpJkZroHhY9HrztVXAH65Buge2N9eTYUgmoqASYiStww63hz9/xAJ6+eBrf9dY3xl4OvsdTL1zA088/BTd18Jeu4dd+9wP40X/0Dpy9cBn9IE0zCx0I5ii4UapJS8zFyTFltRmqMcswAD4Av/+Rj4KswcCMP/zYI7j7rlvxljc+AAZw6dpVfPnKAide9QbsHsxx82binxKssSYjwpjqFBHAdPiLf/GtePQLH0MIQ8zoia6HVk2qlH+IgVgpQkObzzRVV5kdk5/3uHj5KvaGBWQv1X0xq+LtOGpkIkpZ6yYAEb7htXfhd9/9g3j6xYt449/9t9jf3cd0I3YzcbM1/OJ7fwuvvOU43vZXvhXzxVIJgiu0JjIIHGLDD2YYY+B9iEgiCax0+8z8niJ5NAZPPn8W/+13/wiffOQLcBubAIDJ1jqeP3MJZ67t4rH3/jReeWwT3/uLf4AzF29g6mxRhdcWNSltmtQXzIyJCzAwmHRT7M+XsNauEnsiLVJKk+KaZhsr/Y6V80QAS0AIHLNKkJYqKBXmAvYRenaGMD/YwVMvvIzf+MAj+PCnH8f+zh6mG2sIqbcndR08D/jhn/55fOgTn8ZbvvmbsL21kVa/InMpr+aa2uxcB2FGH0LblE9qdxYiwsF8ji898wI+9IlP4fnTp+GOHEs1vUAIjMnaFP3BHL/4Ox/Ag3ffhmeeP4U7HzQYvFeNlmshKI0Y22EwmM8HDPP9ppq+tH/QA8+tbJJmD/x90XXBTZdYJQmZL3bwTXfej++87xux3y8SFM1tBXJz7rjyuw4IAQgDw02BD734KB59+nFgfQPdxKXK9MwmBoAHyLCA370eb76zaLp3G7NS7iPLJe79mjtx5epOtN2dUwvHtEEQByAIMJnAbmwB3STWdqFtNRCWA3Cwj1vvvQ9v/+4fQd/3UZWhnH2uqWYROJsa79nYr+KLf/bH+PRn/wTGdaVsCzrNKRpJxQokl9sJyAhSimojUHrBMmPZ91j2PSyNBSy16+z29gaOn9jG889dwsRMcIxnMOsdJlOXpH6qAwsMYDrQxGB6bAoOHsyhSYBXHC2FlwpuDdO1DXSzAbQRYJ1VLGyqx02lsWRM9D9EYLIgY1Vn3UqyTdam8ORhiTBfDPDeJzsfFwqptm3MDLfW4Z4Ta7hwYwHGBMdvfwjymT9Jzt7UXqsybnpY5Tuu1TzIIZkoLjsjtrDv0fdzGLKp5CiFKAJYa7Cc9zh52xr+9ve9Fv/lVz6NU8/sYt4vwMJg4XZlU/ZTFgIb35N5e6gCjdLrGcUUeV5g68hR7CwJsh9Ak051y1UV6umXAtUK9UZYoGhClrjIgg8Y+hjvtEy8JFCCODkU8F0P34I/fcrjw19eYH93F+AQy/2EVnPqDXeUG7caTbNiFAtQ07tZhDEMA7xnGOKIDPLACCBssBj28dRTe/j3P3MDVy4vMDEzDP2yrY+iWpoKopoKBeLqbPIJtYdQrR2OarRuOgN1HWAcxLq0UExJLOnuhU17cFWU3TSmKjUSgmHw6PtBNXutPs46i36xwI2rV/Dz77uO6wtgsnkM/fwgniNA0xqCFYGrqjHLdIxw4oJW+hRQ0wYnD14AY/AeLCEWM4uSpIDgmWGtw+VrF3DqzMuYdh2WMuDxa89HAVTJy0lrfquGsMmj1mQ0V2ZWWhW3ztHqPEVheDW60/oCTRsXyCiljKn3IfYbyqSiarEWAgOmw3yxxGe/dB5d18HSGTzx6O/HYFS1+q+ltqovk7ofp0vVqKTbpA3XilllMAcMuUAj114pJTMZ4OhNr8CRIwEdWVxb7GF59VnY5PREN+pALZ4eZ9yaQTaHtIrM1ICujmxarknT4qehS1TVYy1CEdWxCaUAkSiVKYk6uIBibLB503Gsbx1F5xz6fo5+2IekWunyLIZUyZWSf6RbdHWS6sqRMW6lGugwC4YhRsFSUJUSHlIuvQTYEgyiehmjUtFWQ4Q2UNF6VWoPYsjmhAxwsOyxTOVSKm3TniOgu4zpIhWW0t+iTRxx1RZ5P8oB5OuaEh8YayE8wJoOxk0A79Ug1nYF1IxnzQE7MlXcqrWgOmhgjl2pzu6cx+LoXdiYriNwKJ49p/ZIJZ8JhM52OHXtOQQJ6Mi0jaBUtEqZ8CNaKeBbaV+QKGBZLvGqkyfg/YBz5y8VJ1zayOeG3ikfSCsiIy5OW/c2NG6CG9fO4Nrlc7jp+B3g0KdIX0oxRqGrbPy9rpvi1DOfx3zvCszmdq2fRlsESKN+igBA09d9vxBk1LQPo1LReEiN73dw3M5w+8YtsUeETmGqvqMiDGs67IUFXphfArtpXB30VcpXSEvLa+ub3F+NiGLxXipsHhZLvOauW/Hx//Qv8fSp83jru34Og8pZC8uoWBpNKpQoDT+PKHeJlYu82MdsuoWTt70OhkxSguc+Eyp5JTHKHoYDnHn5ETACzPpmgqoyagBIK+yxcJGnyyilVruhF7xsDLrJBi4td3Dx0mNNV5X20AOqfePcBLbbiHr7hgWkFfm26BJV1Y08MqgBODiovYr6AdcuXsGXv/wiHn3mFBY3dmN7gIz/19ZgrCs5Z2pac0rJZImhlZUqAtBkhsX8Op5/7P2xPkCbDdP2Qor1AQa0tg2azHQfyVF/Ilb3kOMDAU0e/D4hTdVpZEKjHpgiQBgg7BtxrYwkKTXRbaNTylGvaYsXhLCqShAuBXpkDNh7bN20gVtf91osQCAOMahiwcwCXqjQA4zYIuHcl57E7s4eaNK12n7SPfCoLQIUGYlPQxRgKXNC4+NeMjxNNLakRh7Q0LO09NfOKE92gIv4tx7jZMg0DrFg8tyGizpA7GqL3tw7bdQRa9wqrOlLJG0b05JUyUEaB3Sba3j7z/wonnUzPH9tF9Mu8vNrzsI4i5m1sJ2DJUKX/s184TE8+573xop+a0dnCKBBQFCn2GgpDaxrm4noA9qkXZiSSqhW8uJjf6aFX+mTHY1SZCJtXe6qDib1yBHVPjt/IKsuiYhN9qBDfql9mnUD0wollY8gg7Cc4+hDD+CxtZsx27uB12yupYr7ejQEiYcMIS62IdZsua+7H8/ddhLhma+A1tdHtQarucJK3mXfQ6paSK//2li81Epox1qyhGbUU7pW69CIq3KrB+3ottq1Oy1hpGsxZlSKI233K9Emph7ZQSORbjnKiqg9+otiacdSGNf39sHzPjKY4yBHpHQkd4YwsQZb1GG2NsMyhOagBawcRTUSI6TmelqcQKpQnUs1qKwk3kUzyCuydFNlOWgPdnAFopGWXNRu4tIUYcghmmWMmn1ruZ5ZaXZROkeJ1DaPNFprRLUBIASeBTIEMHFjBig1Tsqw3ljCkoDedgiLORCG+lm6OEpG5phG53GVVsXUIKSSXNE9UkWffsItwCgdx/IwGFU5mTNiui9y02PTNKdm6F5u0OKqvDtEmoSO5KMQm4XHo8PSZNTaV69ExcAOARRi9xGWeDYL5WNP0k6dOAs2ADkLG3oc/+Y3YfHyGbD3qX+oEozJ6GfRJ/FRIz2pvTLU6wZQjSdG7ZpZVcePuiGqMcpBXT1HTCmfIVTOEKhdsxRnOi7AGDX2biUSVJs+SWuaiBoXvKqDSC1yBh9Ag4cYU84xzabHUByAQBZvvnkbO8slHttbYnnydoSuAy0XEGubCnVSjVMbplNrN9G2oYdK9DS4Xg5F1YrHklXViDoJ0I1j7dp7jUGH6CIPG+fmAKiCGiRphDA6BQ9K6EVV3JVHYtxTWhg+xAkIxhTbLBKdsbUG7AfsDB5/76E7ceraHj569gamiwUQfG03nFTKK5BXIxuitp1Mw/0p5KTN1kpckGIRo2G86hM68g/OUDwdt5KuXJs25YM6KRcykNpuOdlNin1RBWg5aSn18J4i7RDB+Lza2pVFy8Vz25gB8L52fs5qahCCNZBhgN+/gXd95FEc9B5mcxPD0gOFzxcV6a5UfqUOh7J64qlKpuvTYxs0JauQMye4qstk1dJZpYANp/b1CNAn5glkdatpRiur8XLMIPWkpfYglrZZKlYatrYtJdGcx5EXk8APEWoW2Yxk5V0stDCTKcTv4tlnXoyrajoDf+4ToL09YGMDTetubYvTAqsn4LUt9mUk2Sy8WfMGTXm0wq3VY2ylWWywAmdtVLvB1O5QaOsFRxSFLi+l1QPeGu1oTZI3hdcySs7odmLlSMF6eBAPHjz4elemzdH6eQC2tzHZ3AQxg7oOQ/DgENQxvMqkZHZW1PG3+jQQGuM7VbnZDMGo25Yu7pNDju7V7dWEAcNwUbIdK0/0lqKmx7JpOtAWqHrIado0uu02tbhKSGGl5xyporgkCQGAvkc5ydHQytlc6CtbaiZTiOtAxrQLaPX0lUoT61IjolZBopVuhkrr+VqErU6C1U2i8jjxuA93kqhbwBEZGOMQ2FeznLuelI62rMpVqZFhkzJNNarVp0+MelDoIjZV7Dc+IiUSVR3kpdMI586Bjp8ABT+qVB+d9sEMTDqECxeAsy+DZmsjqaLqcx2kOY6kSBA4HSq3kjduT9WobTGMal0wRraslNAjs+6iKXcCgXMutmFsMvcrjQeas9rHiYxW3ojxsdSH4H31VmoHsrRKcB1obxf8278O3HN3VBqI6lIisTlePNOdQc5BAkO+8mVguQTWNlQSRmqvUl3pUzgaac7PYaXybs8lJqyUxFMbmMXzL0c60EbTy4BLzTpAAgMDay18UGU7aPsr6yo/yf2mqTZBJQ239HuptuiS5swAfe4KtRyNgm+YzkAH+5DPfaY9P15G8VS+R2OAtQ1guj7y9zRKEyoXpk1Zkdfos1VHFDq1Z6M1ZTv6jIBkqigdsSvZnDufjuRKXBBD0LkJOPjEfI7UcStwi1rJHdrwGsmnmNxhRVYPhG4ifxll4rTZIAJm66DZeitqkprOrLEDVYWHMW2V58iUtMeef5UiwyZmoDZvvcIxyagQQ5oatlqtJ0DHxUo4Uaxk13VY+qGkC9soWlaUZNW3VS3nyunYwi39NaY9xhB31Esa1impn6uSEyA1g6VRKFqp8wJZRiaOREZVqcrU0IhQo7HcegQrNZUh+myBcVSf7msy1JOeszw9D5B1HSYiGLgmlnUWixpb2sz7aviuA5amapUrHSGymneABgK1EC4r0uIuNkkYnFc/KVUcq6NxdSNyqh168/WJWtROY1PT9jVdSWKMB3l89O34Qm6INkeVgLmmHY0Azk3AXuDZ1+BspZp7nEBXNVYyTurrwy6p6ddcND+qPFEXoVekVGu0SNUvZJiZuSbCYUUm6mxKRR2LZisPabKUU4YY9X5rWF86TG4oDR4vJtF5YDo6aSm2vhqLRATdZAIaCEMYqo1tcr/6CPC6ehqdlS6uMKOosTnEhyorqk9vLXTIyLmZMX3XnlShIXLB22hrmXNEW1oVartuDjlNR1T8k02O0RSKHOIjVNzTeaA7pN4Y0E370Bzf57rY79/7IXfKV6u2bV7Ren99IhGNUr5tCwSW3GOZVs+mpEhDkC5qKE2lpK1DHvWdxqF925RmSGR1N47RjaFR96zRsbuQ1QxbQT3qvJxuQD2EYHxUIlo2VCdcRATGOUysgWcPz2HUhJeaYu0SERKtSgeLvaVR1DjeuqMTtylLTOpRWzRuLqtI49y7YqUnBumezahtZjDq+aCYWn3uPBoqTfklVo2pdI86EcB6YCqVLaXVwS8pyXbwZYVIc9YlJUJA4CHZaqM6YbXZfp3s0Icp1EBPRkee18mhpqeLNiFSWkKuNhpUPKOmkEdIrp0Vbht0ZPVCyddqAp5xWNKC2kqNRC9INDe26kEPH3xROWGS/0fb+ujwrDWwEptfh3xKtOg8MaUFLqm3JpoEtdbkN5Fz2RmokpTUBpgo6f5L4RuvRN5EK00ha4xApPLSGjpmvZOOJ0x7oDSNj6Kleuhd3vE2npgEKzG4Mlpz89VXfv7zfwDEoksOAEXsFgAAAABJRU5ErkJggg==" alt="">
+      <span class="brand-name">Sixfold&nbsp;Wallet</span>
+    </div>
+    <nav class="lang" aria-label="Idioma / Language">
+      <a href="#es" hreflang="es">Español</a>
+      <a href="#en" hreflang="en">English</a>
+    </nav>
+  </header>
+
+  <article id="es" lang="es">
+    <p class="doc-label">Documento legal · <span class="date">Vigente desde el 31 de agosto de 2026</span></p>
+    <h1 class="title">Política de Privacidad</h1>
+    <p class="dek">Cómo trata Sixfold Wallet tus datos financieros, en un párrafo: no los recopilamos, no los vemos, y técnicamente no podríamos aunque quisiéramos.</p>
+
+    <div class="glance">
+      <p class="glance-eyebrow">En resumen</p>
+      <ul class="glance-list">
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Sin permiso de internet.</strong> La app no puede conectarse a ningún servidor: no hay a dónde enviar tus datos.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Todo se queda en tu teléfono,</strong> cifrado con una clave que nunca sale del dispositivo.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Las copias de seguridad las cifras tú,</strong> con una contraseña que solo conoces tú.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Cero anuncios, cero rastreo, cero cuentas.</strong> No hay ningún SDK de terceros integrado.</span></li>
+      </ul>
+    </div>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">01</span><h2 class="clause-title">Qué datos recopilamos</h2></div>
+      <div class="clause-body">
+        <p>Ninguno. Sixfold Wallet no recopila, transmite ni comparte ningún dato personal, financiero o de uso. Todo lo que introduces en la app (carteras, movimientos, deudas, objetivos de ahorro, categorías) se queda exclusivamente en tu dispositivo.</p>
+        <p>No pedimos correo electrónico, no requerimos registro ni inicio de sesión, y no existe ningún servidor nuestro con el que la app se comunique.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">02</span><h2 class="clause-title">Sin conexión a internet, de forma verificable</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet no solicita el permiso <code class="inline">android.permission.INTERNET</code> en ningún momento. No es solo una promesa: es una restricción técnica que impone el propio sistema operativo Android. Sin ese permiso, la aplicación no puede abrir ninguna conexión de red.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">03</span><h2 class="clause-title">Cómo se almacenan tus datos en el dispositivo</h2></div>
+      <div class="clause-body">
+        <p>La base de datos local de la app está cifrada mediante SQLCipher. La clave de cifrado se genera y se guarda en el Android Keystore del propio teléfono (un almacén de claves protegido por hardware cuando el dispositivo lo soporta) y nunca sale de él.</p>
+        <p>Si desinstalas la app o borras sus datos desde Ajustes, esa información se elimina de forma permanente del dispositivo.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">04</span><h2 class="clause-title">Copias de seguridad</h2></div>
+      <div class="clause-body">
+        <p>Puedes exportar una copia de seguridad de tus datos en cualquier momento desde Ajustes. Esa copia se cifra con <strong>AES-256-GCM</strong> usando una contraseña que eliges tú al exportarla; nunca la guardamos ni la conocemos.</p>
+        <p>Una vez generado ese archivo, su almacenamiento y distribución quedan bajo tu responsabilidad: si lo compartes por correo, lo subes a una nube o lo envías por mensajería, esos servicios se rigen por sus propias políticas de privacidad, ajenas a esta app.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">05</span><h2 class="clause-title">Bloqueo con huella, cara o PIN</h2></div>
+      <div class="clause-body">
+        <p>El bloqueo opcional de la app usa la API oficial de autenticación biométrica de Android (<code class="inline">BiometricPrompt</code>). Tu huella, tu rostro o tu PIN se procesan enteramente dentro del sistema operativo: la app solo recibe un resultado de "autenticado" o "no autenticado", nunca los datos biométricos.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">06</span><h2 class="clause-title">Terceros y servicios externos</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet no integra ningún SDK de analítica, publicidad, seguimiento de errores ni redes sociales. No compartimos datos con terceros por la sencilla razón de que la app nunca los recibe.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">07</span><h2 class="clause-title">Uso por menores de edad</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet no está dirigida a menores de 13 años ni recopila a sabiendas datos de menores, algo en cualquier caso imposible porque la app no recopila datos de ningún usuario.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">08</span><h2 class="clause-title">Tus derechos sobre tus datos</h2></div>
+      <div class="clause-body">
+        <p>Como toda tu información vive únicamente en tu dispositivo, tienes control total sobre ella en todo momento:</p>
+        <ul>
+          <li><strong>Acceder:</strong> todos tus datos son visibles dentro de la propia app.</li>
+          <li><strong>Exportar:</strong> genera una copia de seguridad cifrada cuando quieras.</li>
+          <li><strong>Eliminar:</strong> borra datos concretos desde la app, o todos a la vez desde Ajustes → Opciones de Peligro.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">09</span><h2 class="clause-title">Cambios en esta política</h2></div>
+      <div class="clause-body">
+        <p>Si esta política cambia, actualizaremos la fecha de vigencia de este documento. Como la app no puede conectarse a internet, cualquier cambio se reflejará en esta página y en la ficha de Google Play, nunca mediante un aviso enviado desde la propia aplicación.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">10</span><h2 class="clause-title">Contacto</h2></div>
+      <div class="clause-body">
+        <p>Para cualquier duda sobre esta política, escribe a <code class="inline">mc.apps.soporte@gmail.com</code>.</p>
+      </div>
+    </section>
+  </article>
+
+  <article id="en" lang="en">
+    <p class="doc-label">Legal document · <span class="date">Effective August 31, 2026</span></p>
+    <h1 class="title">Privacy Policy</h1>
+    <p class="dek">How Sixfold Wallet handles your financial data, in one sentence: we don't collect it, we can't see it, and technically we couldn't even if we wanted to.</p>
+
+    <div class="glance">
+      <p class="glance-eyebrow">At a glance</p>
+      <ul class="glance-list">
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No internet permission.</strong> The app cannot connect to any server, so there is nowhere to send your data.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Everything stays on your phone,</strong> encrypted with a key that never leaves the device.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>You encrypt your own backups,</strong> with a password only you know.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No ads, no tracking, no accounts.</strong> No third-party SDKs are included.</span></li>
+      </ul>
+    </div>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">01</span><h2 class="clause-title">What data we collect</h2></div>
+      <div class="clause-body">
+        <p>None. Sixfold Wallet does not collect, transmit or share any personal, financial or usage data. Everything you enter in the app (wallets, transactions, debts, savings goals, categories) stays exclusively on your device.</p>
+        <p>We don't ask for an email address, there is no sign-up or login, and there is no server of ours that the app talks to.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">02</span><h2 class="clause-title">No internet connection, verifiably</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet never requests the <code class="inline">android.permission.INTERNET</code> permission. This isn't just a promise: it's a technical restriction enforced by Android itself. Without that permission, the app cannot open any network connection.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">03</span><h2 class="clause-title">How your data is stored on the device</h2></div>
+      <div class="clause-body">
+        <p>The app's local database is encrypted with SQLCipher. The encryption key is generated and kept in the phone's Android Keystore (hardware-backed when the device supports it) and never leaves it.</p>
+        <p>If you uninstall the app or clear its data from Settings, that information is permanently removed from the device.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">04</span><h2 class="clause-title">Backups</h2></div>
+      <div class="clause-body">
+        <p>You can export a backup of your data at any time from Settings. The backup is encrypted with <strong>AES-256-GCM</strong> using a password you choose when exporting it; we never store or know that password.</p>
+        <p>Once the file is created, storing and sharing it is up to you: if you email it, upload it to a cloud service or send it through a messaging app, those services are governed by their own privacy policies, independent of this app.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">05</span><h2 class="clause-title">Fingerprint, face or PIN lock</h2></div>
+      <div class="clause-body">
+        <p>The optional app lock uses Android's official biometric authentication API (<code class="inline">BiometricPrompt</code>). Your fingerprint, face or PIN are processed entirely by the operating system: the app only receives an "authenticated" or "not authenticated" result, never any biometric data.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">06</span><h2 class="clause-title">Third parties and external services</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet includes no analytics, advertising, crash-reporting or social-media SDKs. We don't share data with third parties for the simple reason that the app never receives any.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">07</span><h2 class="clause-title">Children</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet is not directed at children under 13 and does not knowingly collect data from minors, which is impossible anyway because the app collects no data from any user.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">08</span><h2 class="clause-title">Your rights over your data</h2></div>
+      <div class="clause-body">
+        <p>Because all your information lives only on your device, you are in full control of it at all times:</p>
+        <ul>
+          <li><strong>Access:</strong> all your data is visible inside the app.</li>
+          <li><strong>Export:</strong> create an encrypted backup whenever you like.</li>
+          <li><strong>Delete:</strong> remove individual items in the app, or everything at once from Settings → Danger Zone.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">09</span><h2 class="clause-title">Changes to this policy</h2></div>
+      <div class="clause-body">
+        <p>If this policy changes, we will update the effective date on this page. Because the app cannot connect to the internet, any change will be published here and on the Google Play listing, never through a notice sent from the app itself.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">10</span><h2 class="clause-title">Contact</h2></div>
+      <div class="clause-body">
+        <p>For any question about this policy, write to <code class="inline">mc.apps.soporte@gmail.com</code>.</p>
+      </div>
+    </section>
+  </article>
+
+  <footer>
+    <span>Sixfold Wallet</span>
+    <span>Última actualización / Last updated: 23/09/2026</span>
+  </footer>
+</div>
+</body>
+</html>
