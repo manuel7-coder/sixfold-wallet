@@ -106,6 +106,7 @@
     display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
     font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--ink-faint);
   }
+  .clause-body a { color: var(--accent); text-underline-offset: 2px; }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   @media (max-width: 560px) {
     .clause-body { padding-left: 0; }
@@ -127,32 +128,33 @@
   </header>
 
   <article id="es" lang="es">
-    <p class="doc-label">Documento legal · <span class="date">Vigente desde el 31 de agosto de 2026</span></p>
+    <p class="doc-label">Documento legal · <span class="date">Vigente desde el 23 de septiembre de 2026</span></p>
     <h1 class="title">Política de Privacidad</h1>
-    <p class="dek">Cómo trata Sixfold Wallet tus datos financieros, en un párrafo: no los recopilamos, no los vemos, y técnicamente no podríamos aunque quisiéramos.</p>
+    <p class="dek">Cómo trata Sixfold Wallet tus datos financieros, en un párrafo: se quedan en tu teléfono, no los recopilamos y no los vemos.</p>
 
     <div class="glance">
       <p class="glance-eyebrow">En resumen</p>
       <ul class="glance-list">
-        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Sin permiso de internet.</strong> La app no puede conectarse a ningún servidor: no hay a dónde enviar tus datos.</span></li>
-        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Todo se queda en tu teléfono,</strong> cifrado con una clave que nunca sale del dispositivo.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Tus datos financieros nunca salen del teléfono.</strong> No tenemos servidores y la app no envía a ningún sitio lo que anotas.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Todo se guarda cifrado</strong> con una clave que nunca sale del dispositivo.</span></li>
         <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Las copias de seguridad las cifras tú,</strong> con una contraseña que solo conoces tú.</span></li>
-        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Cero anuncios, cero rastreo, cero cuentas.</strong> No hay ningún SDK de terceros integrado.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Cero anuncios, cero rastreo, cero cuentas.</strong> La única conexión a internet es la del sistema de pagos de Google Play, para comprar Premium.</span></li>
       </ul>
     </div>
 
     <section class="clause">
       <div class="clause-head"><span class="clause-num">01</span><h2 class="clause-title">Qué datos recopilamos</h2></div>
       <div class="clause-body">
-        <p>Ninguno. Sixfold Wallet no recopila, transmite ni comparte ningún dato personal, financiero o de uso. Todo lo que introduces en la app (carteras, movimientos, deudas, objetivos de ahorro, categorías) se queda exclusivamente en tu dispositivo.</p>
-        <p>No pedimos correo electrónico, no requerimos registro ni inicio de sesión, y no existe ningún servidor nuestro con el que la app se comunique.</p>
+        <p>Ninguno de los datos que introduces. Todo lo que anotas en la app (carteras, movimientos, deudas, objetivos de ahorro, categorías) se queda exclusivamente en tu dispositivo: no lo recopilamos, no lo transmitimos y no lo compartimos.</p>
+        <p>No pedimos correo electrónico, no requerimos registro ni inicio de sesión, y no existe ningún servidor nuestro con el que la app se comunique. La única excepción a "nada sale del teléfono" es el sistema de pagos de Google Play, que se explica en el apartado 06.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">02</span><h2 class="clause-title">Sin conexión a internet, de forma verificable</h2></div>
+      <div class="clause-head"><span class="clause-num">02</span><h2 class="clause-title">Conexión a internet: solo para los pagos</h2></div>
       <div class="clause-body">
-        <p>Sixfold Wallet no solicita el permiso <code class="inline">android.permission.INTERNET</code> en ningún momento. No es solo una promesa: es una restricción técnica que impone el propio sistema operativo Android. Sin ese permiso, la aplicación no puede abrir ninguna conexión de red.</p>
+        <p>La app incluye la librería oficial de pagos de Google Play (Google Play Billing Library) para poder comprar Premium. Esa librería necesita los permisos de Android <code class="inline">INTERNET</code> y <code class="inline">ACCESS_NETWORK_STATE</code>, y por eso la app los declara.</p>
+        <p>El código de Sixfold Wallet no usa esa conexión: no se comunica con ningún servidor nuestro ni envía tus carteras, movimientos, deudas u objetivos a ningún sitio.</p>
       </div>
     </section>
 
@@ -180,21 +182,30 @@
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">06</span><h2 class="clause-title">Terceros y servicios externos</h2></div>
+      <div class="clause-head"><span class="clause-num">06</span><h2 class="clause-title">Compra de Premium a través de Google Play</h2></div>
       <div class="clause-body">
-        <p>Sixfold Wallet no integra ningún SDK de analítica, publicidad, seguimiento de errores ni redes sociales. No compartimos datos con terceros por la sencilla razón de que la app nunca los recibe.</p>
+        <p>Las funciones Premium se desbloquean con un pago único a través de Google Play. El pago lo procesa Google según sus propias condiciones y su <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad</a>: la app nunca ve tu tarjeta ni tus datos de pago.</p>
+        <p>Para saber si has comprado Premium, la app pregunta a Google Play y guarda la respuesta solo en tu dispositivo. Como a cualquier desarrollador, Google nos facilita la información de los pedidos que necesitamos para gestionar ventas, reembolsos e impuestos, según las condiciones de Google Play.</p>
+        <p>Además, la propia librería de pagos envía a Google datos técnicos de diagnóstico sobre su funcionamiento (por ejemplo, cómo se usa la librería y los problemas de conexión con Google Play), que Google usa para mantener su servicio de pagos. Esa librería no tiene acceso a nada de lo que anotas en la app.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">07</span><h2 class="clause-title">Uso por menores de edad</h2></div>
+      <div class="clause-head"><span class="clause-num">07</span><h2 class="clause-title">Terceros y servicios externos</h2></div>
       <div class="clause-body">
-        <p>Sixfold Wallet no está dirigida a menores de 13 años ni recopila a sabiendas datos de menores, algo en cualquier caso imposible porque la app no recopila datos de ningún usuario.</p>
+        <p>Sixfold Wallet no integra ningún SDK de analítica, publicidad, seguimiento de errores ni redes sociales. El único componente de terceros es la librería de pagos de Google Play descrita en el apartado anterior. No vendemos ni compartimos tus datos con nadie.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">08</span><h2 class="clause-title">Tus derechos sobre tus datos</h2></div>
+      <div class="clause-head"><span class="clause-num">08</span><h2 class="clause-title">Uso por menores de edad</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet no está dirigida a menores de 13 años ni recopila a sabiendas datos de menores. En cualquier caso, la app no recopila lo que anota ningún usuario.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">09</span><h2 class="clause-title">Tus derechos sobre tus datos</h2></div>
       <div class="clause-body">
         <p>Como toda tu información vive únicamente en tu dispositivo, tienes control total sobre ella en todo momento:</p>
         <ul>
@@ -206,14 +217,14 @@
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">09</span><h2 class="clause-title">Cambios en esta política</h2></div>
+      <div class="clause-head"><span class="clause-num">10</span><h2 class="clause-title">Cambios en esta política</h2></div>
       <div class="clause-body">
-        <p>Si esta política cambia, actualizaremos la fecha de vigencia de este documento. Como la app no puede conectarse a internet, cualquier cambio se reflejará en esta página y en la ficha de Google Play, nunca mediante un aviso enviado desde la propia aplicación.</p>
+        <p>Si esta política cambia, actualizaremos la fecha de vigencia de este documento. Los cambios se publicarán en esta página y en la ficha de Google Play; la app no envía avisos.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">10</span><h2 class="clause-title">Contacto</h2></div>
+      <div class="clause-head"><span class="clause-num">11</span><h2 class="clause-title">Contacto</h2></div>
       <div class="clause-body">
         <p>Para cualquier duda sobre esta política, escribe a <code class="inline">mc.apps.soporte@gmail.com</code>.</p>
       </div>
@@ -221,32 +232,33 @@
   </article>
 
   <article id="en" lang="en">
-    <p class="doc-label">Legal document · <span class="date">Effective August 31, 2026</span></p>
+    <p class="doc-label">Legal document · <span class="date">Effective September 23, 2026</span></p>
     <h1 class="title">Privacy Policy</h1>
-    <p class="dek">How Sixfold Wallet handles your financial data, in one sentence: we don't collect it, we can't see it, and technically we couldn't even if we wanted to.</p>
+    <p class="dek">How Sixfold Wallet handles your financial data, in one sentence: it stays on your phone, we don't collect it and we can't see it.</p>
 
     <div class="glance">
       <p class="glance-eyebrow">At a glance</p>
       <ul class="glance-list">
-        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No internet permission.</strong> The app cannot connect to any server, so there is nowhere to send your data.</span></li>
-        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Everything stays on your phone,</strong> encrypted with a key that never leaves the device.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Your financial data never leaves your phone.</strong> We have no servers, and the app sends nothing you enter anywhere.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Everything is stored encrypted</strong> with a key that never leaves the device.</span></li>
         <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>You encrypt your own backups,</strong> with a password only you know.</span></li>
-        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No ads, no tracking, no accounts.</strong> No third-party SDKs are included.</span></li>
+        <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No ads, no tracking, no accounts.</strong> The only internet connection is Google Play's billing system, used to buy Premium.</span></li>
       </ul>
     </div>
 
     <section class="clause">
       <div class="clause-head"><span class="clause-num">01</span><h2 class="clause-title">What data we collect</h2></div>
       <div class="clause-body">
-        <p>None. Sixfold Wallet does not collect, transmit or share any personal, financial or usage data. Everything you enter in the app (wallets, transactions, debts, savings goals, categories) stays exclusively on your device.</p>
-        <p>We don't ask for an email address, there is no sign-up or login, and there is no server of ours that the app talks to.</p>
+        <p>None of the data you enter. Everything you record in the app (wallets, transactions, debts, savings goals, categories) stays exclusively on your device: we don't collect it, transmit it or share it.</p>
+        <p>We don't ask for an email address, there is no sign-up or login, and there is no server of ours that the app talks to. The only exception to "nothing leaves the phone" is Google Play's billing system, explained in section 06.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">02</span><h2 class="clause-title">No internet connection, verifiably</h2></div>
+      <div class="clause-head"><span class="clause-num">02</span><h2 class="clause-title">Internet access: payments only</h2></div>
       <div class="clause-body">
-        <p>Sixfold Wallet never requests the <code class="inline">android.permission.INTERNET</code> permission. This isn't just a promise: it's a technical restriction enforced by Android itself. Without that permission, the app cannot open any network connection.</p>
+        <p>The app includes Google Play's official billing library (Google Play Billing Library) so you can buy Premium. That library requires the Android <code class="inline">INTERNET</code> and <code class="inline">ACCESS_NETWORK_STATE</code> permissions, which is why the app declares them.</p>
+        <p>Sixfold Wallet's own code doesn't use that connection: it doesn't talk to any server of ours and never sends your wallets, transactions, debts or goals anywhere.</p>
       </div>
     </section>
 
@@ -274,21 +286,30 @@
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">06</span><h2 class="clause-title">Third parties and external services</h2></div>
+      <div class="clause-head"><span class="clause-num">06</span><h2 class="clause-title">Buying Premium through Google Play</h2></div>
       <div class="clause-body">
-        <p>Sixfold Wallet includes no analytics, advertising, crash-reporting or social-media SDKs. We don't share data with third parties for the simple reason that the app never receives any.</p>
+        <p>Premium features are unlocked with a one-time payment through Google Play. The payment is processed by Google under its own terms and <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>: the app never sees your card or payment details.</p>
+        <p>To know whether you've bought Premium, the app asks Google Play and stores the answer only on your device. As with any developer, Google provides us with the order information we need to handle sales, refunds and taxes, under Google Play's terms.</p>
+        <p>The billing library itself also sends Google technical diagnostic data about how it works (for example, how the library is used and connection problems with Google Play), which Google uses to maintain its billing service. That library has no access to anything you record in the app.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">07</span><h2 class="clause-title">Children</h2></div>
+      <div class="clause-head"><span class="clause-num">07</span><h2 class="clause-title">Third parties and external services</h2></div>
       <div class="clause-body">
-        <p>Sixfold Wallet is not directed at children under 13 and does not knowingly collect data from minors, which is impossible anyway because the app collects no data from any user.</p>
+        <p>Sixfold Wallet includes no analytics, advertising, crash-reporting or social-media SDKs. The only third-party component is the Google Play billing library described above. We don't sell or share your data with anyone.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">08</span><h2 class="clause-title">Your rights over your data</h2></div>
+      <div class="clause-head"><span class="clause-num">08</span><h2 class="clause-title">Children</h2></div>
+      <div class="clause-body">
+        <p>Sixfold Wallet is not directed at children under 13 and does not knowingly collect data from minors. In any case, the app doesn't collect what any user records in it.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-head"><span class="clause-num">09</span><h2 class="clause-title">Your rights over your data</h2></div>
       <div class="clause-body">
         <p>Because all your information lives only on your device, you are in full control of it at all times:</p>
         <ul>
@@ -300,14 +321,14 @@
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">09</span><h2 class="clause-title">Changes to this policy</h2></div>
+      <div class="clause-head"><span class="clause-num">10</span><h2 class="clause-title">Changes to this policy</h2></div>
       <div class="clause-body">
-        <p>If this policy changes, we will update the effective date on this page. Because the app cannot connect to the internet, any change will be published here and on the Google Play listing, never through a notice sent from the app itself.</p>
+        <p>If this policy changes, we will update the effective date on this page. Changes will be published here and on the Google Play listing; the app doesn't send notices.</p>
       </div>
     </section>
 
     <section class="clause">
-      <div class="clause-head"><span class="clause-num">10</span><h2 class="clause-title">Contact</h2></div>
+      <div class="clause-head"><span class="clause-num">11</span><h2 class="clause-title">Contact</h2></div>
       <div class="clause-body">
         <p>For any question about this policy, write to <code class="inline">mc.apps.soporte@gmail.com</code>.</p>
       </div>
